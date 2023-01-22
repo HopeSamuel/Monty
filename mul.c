@@ -5,12 +5,12 @@
   * @counter: line_number
   * Return: no return
   */
-void f_mul(stack_t **head, unsigned int counter)
+void f_mul(stack_t ** head , unsigned int counter)
 {
-	stack_t *h;
+	stack_t * h;
 	int len = 0, aux;
 
-	h = *head;
+	h = * head;
 	while (h)
 	{
 		h = h->next;
@@ -24,7 +24,7 @@ void f_mul(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-	h = *head;
+	h = * head;
 	aux = h->next->n * h->n;
 	h->next->n = aux;
 	*head = h->next;
