@@ -9,8 +9,8 @@ void f_sub(stack_t **head, unsigned int counter)
 {
 	stack_t *aux;
 	int sus, nodes;
- 
-        aux = *head;
+
+	aux = *head;
 	for (nodes = 0; aux != NULL; nodes++)
 		aux = aux->next;
 	if (nodes < 2)
