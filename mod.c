@@ -11,7 +11,7 @@ void f_mod(stack_t **head, unsigned int counter)
 	stack_t *h;
 	int len = 0, aux;
 
-        h = *head;
+	h = *head;
 	while (h)
 	{
 		h = h->next;
